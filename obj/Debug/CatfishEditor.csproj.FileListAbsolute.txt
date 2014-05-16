@@ -1,0 +1,7 @@
+C:\Program Code\Git\CatfishEditor\obj\Debug\CatfishEditor.csprojResolveAssemblyReference.cache
+C:\Program Code\Git\CatfishEditor\obj\Debug\Catfish.Editor.resources
+C:\Program Code\Git\CatfishEditor\obj\Debug\CatfishEditor.csproj.GenerateResource.Cache
+C:\Program Code\Git\CatfishEditor\bin\Debug\CatfishEditor.exe
+C:\Program Code\Git\CatfishEditor\bin\Debug\CatfishEditor.pdb
+C:\Program Code\Git\CatfishEditor\obj\Debug\CatfishEditor.exe
+C:\Program Code\Git\CatfishEditor\obj\Debug\CatfishEditor.pdb

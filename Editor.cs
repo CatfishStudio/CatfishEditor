@@ -976,12 +976,12 @@ namespace Catfish
 		/* О программе */
 		void ОПрограммеToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.0" + System.Environment.NewLine + "Автор: Сомов евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014", "О программе", MessageBoxButtons.OK);
+			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.0" + System.Environment.NewLine + "Автор: Сомов Евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014", "О программе", MessageBoxButtons.OK);
 		}
 		
 		void ToolStripButton19Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.0" + System.Environment.NewLine + "Автор: Сомов евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014", "О программе", MessageBoxButtons.OK);			
+			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.0" + System.Environment.NewLine + "Автор: Сомов Евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014", "О программе", MessageBoxButtons.OK);			
 		}
 		
 		/* Выделить всё */

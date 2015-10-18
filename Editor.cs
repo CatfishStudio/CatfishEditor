@@ -37,8 +37,9 @@ namespace Catfish
 		private String _findText = "";
 		
 		/* Загрузка списка операторов */
-		private void loadOperators()
+		private void loadOperators(string codeType)
 		{
+			/*
 			String pathFile = Config.MyProgramDirectory + "\\resource\\operators.txt";
 			if(File.Exists(pathFile)){
 				StreamReader sr = File.OpenText(pathFile);
@@ -48,6 +49,44 @@ namespace Catfish
 					listBox1.Items.Add(str);
                 }
 			}
+			*/
+			
+			if(codeType == "html")
+			{
+				listBox2.Sorted = true;
+				listBox1.Items.Clear();
+				for(int i=0; i < listBox2.Items.Count; i++)
+				{
+					listBox1.Items.Add(listBox2.Items[i].ToString());
+				}
+			}
+			if(codeType == "css")
+			{
+				listBox3.Sorted = true;
+				listBox1.Items.Clear();
+				for(int i=0; i < listBox3.Items.Count; i++)
+				{
+					listBox1.Items.Add(listBox3.Items[i].ToString());
+				}
+			}
+			if(codeType == "javascript")
+			{
+				listBox4.Sorted = true;
+				listBox1.Items.Clear();
+				for(int i=0; i < listBox4.Items.Count; i++)
+				{
+					listBox1.Items.Add(listBox4.Items[i].ToString());
+				}
+			}
+			if(codeType == "php")
+			{
+				listBox5.Sorted = true;
+				listBox1.Items.Clear();
+				for(int i=0; i < listBox5.Items.Count; i++)
+				{
+					listBox1.Items.Add(listBox5.Items[i].ToString());
+				}
+			}
 		}
 		
 		/* Загрузка редактора */
@@ -56,7 +95,7 @@ namespace Catfish
 			/* Конфигурация: */
 			Config.MyProgramDirectory = Environment.CurrentDirectory + "\\"; // путь к программе
 			/* Операторы */
-			loadOperators(); // загрузка списка операторов
+			loadOperators("html"); // загрузка списка операторов
 		}
 		
 		/* определение номера активной строки */
@@ -389,7 +428,7 @@ namespace Catfish
 		/* Сохранить файл ASCII */
 		void fileSaveASCII(bool _saveAs)
 		{
-			if(_saveAs == true || this.Text == "Редактор"){
+			if(_saveAs == true || this.Text == "Catfish Editor v 1.1"){
 				if(saveFileDialog1.ShowDialog() == DialogResult.OK){
 					richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
 					this.Text = saveFileDialog1.FileName;
@@ -413,7 +452,7 @@ namespace Catfish
 		/* Сохранить файл UTF-8 */
 		void fileSaveUTF8(bool _saveAs)
 		{
-			if(_saveAs == true || this.Text == "Редактор"){
+			if(_saveAs == true || this.Text == "Catfish Editor v 1.1"){
 				if(saveFileDialog1.ShowDialog() == DialogResult.OK){
 					StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, Encoding.UTF8);
 					sw.Write(richTextBox1.Text);
@@ -440,7 +479,7 @@ namespace Catfish
 		/* Сохранить файл UTF-8 without BOM*/
 		void fileSaveUTF8wBOM(bool _saveAs)
 		{
-			if(_saveAs == true || this.Text == "Редактор"){
+			if(_saveAs == true || this.Text == "Catfish Editor v 1.1"){
 				if(saveFileDialog1.ShowDialog() == DialogResult.OK){
 					UTF8Encoding utf8wb = new UTF8Encoding(false);
 					StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, utf8wb);
@@ -453,7 +492,7 @@ namespace Catfish
 				}
 			}else{
 				UTF8Encoding utf8wb = new UTF8Encoding(false);
-				StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, utf8wb);
+				StreamWriter sw = new StreamWriter(this.Text, false, utf8wb);
 				sw.Write(richTextBox1.Text);
 				sw.Close();
 				toolStripStatusLabel4.ForeColor = Color.Black;
@@ -473,11 +512,8 @@ namespace Catfish
 		{
 			toolStripStatusLabel1.Text = _codingName;
 			aSCIIToolStripMenuItem2.Checked = _asciiChecked;
-			aSCIIToolStripMenuItem3.Checked = _asciiChecked;
 			uTF8ToolStripMenuItem2.Checked = _utf8Checked;
-			uTF8ToolStripMenuItem3.Checked = _utf8Checked;
 			uTF8WithoutBOMToolStripMenuItem2.Checked = _utf8wbChecked;
-			uTF8WithoutBOMToolStripMenuItem3.Checked = _utf8wbChecked;
 		}
 		void changeEncoding(String _codingName, String _filePath)
 		{
@@ -976,12 +1012,12 @@ namespace Catfish
 		/* О программе */
 		void ОПрограммеToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.0" + System.Environment.NewLine + "Автор: Сомов Евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014", "О программе", MessageBoxButtons.OK);
+			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.1" + System.Environment.NewLine + "Автор: Сомов Евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014-2015", "О программе", MessageBoxButtons.OK);
 		}
 		
 		void ToolStripButton19Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.0" + System.Environment.NewLine + "Автор: Сомов Евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014", "О программе", MessageBoxButtons.OK);			
+			MessageBox.Show("Программа: Catfish Editor" + System.Environment.NewLine + "Версия: 1.1" + System.Environment.NewLine + "Автор: Сомов Евгений Павлович" + System.Environment.NewLine + "©  Somov Evgeniy, 2014-2015", "О программе", MessageBoxButtons.OK);			
 		}
 		
 		/* Выделить всё */
@@ -1006,6 +1042,42 @@ namespace Catfish
 		{
 			Editor fEditor = new Editor();
 			fEditor.Show();
+		}
+		
+		void HtmlToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			htmlToolStripMenuItem.Checked = true;
+			cssToolStripMenuItem.Checked = false;
+			javascriptToolStripMenuItem.Checked = false;
+			phpToolStripMenuItem.Checked = false;
+			loadOperators("html");
+		}
+		
+		void CssToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			htmlToolStripMenuItem.Checked = false;
+			cssToolStripMenuItem.Checked = true;
+			javascriptToolStripMenuItem.Checked = false;
+			phpToolStripMenuItem.Checked = false;
+			loadOperators("css");			
+		}
+		
+		void JavascriptToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			htmlToolStripMenuItem.Checked = false;
+			cssToolStripMenuItem.Checked = false;
+			javascriptToolStripMenuItem.Checked = true;
+			phpToolStripMenuItem.Checked = false;
+			loadOperators("javascript");			
+		}
+		
+		void PhpToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			htmlToolStripMenuItem.Checked = false;
+			cssToolStripMenuItem.Checked = false;
+			javascriptToolStripMenuItem.Checked = false;
+			phpToolStripMenuItem.Checked = true;
+			loadOperators("php");			
 		}
 	}
 }

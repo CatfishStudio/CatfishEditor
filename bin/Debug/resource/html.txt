@@ -1,0 +1,133 @@
+<!-- -->
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<a href="" name=""></a>
+<abbr title=""></abbr>
+<acronym title=""></acronym>
+<address></address>
+<applet code="Clock.class" width="60" height="10"></applet>
+<area shape="" coords="" href="" alt="">
+<article></article>
+<aside></aside>
+<audio controls><source src="" type=""></audio>
+<b></b>
+<base target="">
+<basefont face="" size="" color="">
+<bdi></bdi>
+<bdo dir=""></bdo>
+<bgsound src="" loop="-1">
+<blockquote></blockquote>
+<big></big>
+<body></body>
+<blink></blink>
+<br>
+<button></button>
+<canvas id="" width="200" height="200"></canvas>
+<dd></dd>
+<del></del>
+<details open=""></details>
+<dfn></dfn>
+<dir><li>1</li><li>2</li><li>3</li></dir>
+<div id="" class=""></div>
+<dl><dt>Термин 1</dt><dd>Определение термина 1</dd></dl>
+<dt></dt>
+<em></em>
+<embed src="" width="" height="" type="" pluginspage="">
+<fieldset></fieldset>
+<figcaption></figcaption>
+<figure><figcaption></figcaption></figure>
+<font size="" color="" face=""></font>
+<form name="" target="" action=""></form>
+<footer></footer>
+<frame src="" name="" scrolling="no" noresize>
+<frameset rows="" cols=""><frame src="" name="" scrolling="no" noresize><frame src="" name=""></frameset>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+<head></head>
+<header></header>
+<hgroup></hgroup>
+<hr>
+<html></html>
+<i></i>
+<iframe src="" width="" height="" align=""></iframe>
+<img src="" width="" height="" alt="">
+<input type="" name="" value="">
+<ins></ins>
+<isindex action="" prompt="">
+<kbd></kbd>
+<keygen></keygen>
+<label for=""></label>
+<legend></legend>
+<li></li>
+<link rel="" type="" title="" href="">
+<link rel="stylesheet" href="*.css">
+<main></main>
+<map id="" name=""><area shape="" coords="" href="" alt=""></map>
+<marquee behavior="" direction="" bgcolor=""></marquee>
+<mark></mark>
+<menu><li>1</li><li>2</li><li>3</li></menu>
+<meta name="" content="">
+<meta charset="utf-8">
+<meter value="" max="" low="" high=""></meter>
+<nav><a href=""></a> | <a href=""></a> | <a href=""></a> | <a href=""></a></nav>
+<nobr></nobr>
+<noembed></noembed>
+<noframes></noframes>
+<noscript></noscript>
+<object type="" data="" width="400" height="300"><param name="" value=""></object>
+<ol><li>1</li><li>2</li><li>3</li></ol>
+<optgroup label=""><option value=""></option></optgroup>
+<option value=""></option>
+<output name=""></output>
+<p></p>
+<param name="" value="">
+<plaintext></plaintext>
+<pre></pre>
+<progress max="" value=""></progress>
+<q></q>
+<rp></rp>
+<rt></rt>
+<ruby><rp></rp><rt></rt><rp></rp></ruby>
+<s></s>
+<samp></samp>
+<script type="" src=""></script>
+<script type="text/javascript"></script>
+<script type="text/javascript" src="*.js"></script>
+<section></section>
+<select size="" multiple name=""><option disabled></option><option value=""></option><option selected value=""></option></select>
+<small></small>
+<span class=""></span>
+<source src="" type="">
+<strike></strike>
+<strong></strong>
+<style type="text/css"></style>
+<sub></sub>
+<summary></summary>
+<sup></sup>
+<table><tr><td></td></tr></table>
+<tbody align=""></tbody>
+<td colspan="" bgcolor="" align="" width="" height="" valign=""></td>
+<textarea rows="" cols="" name=""></textarea>
+<tfoot align="" style=""></tfoot>
+<th colspan=""></th>
+<thead style=""></thead>
+<time datetime=""></time>
+<title></title>
+<tr align="right" valign="top"></tr>
+<tt></tt>
+<u></u>
+<ul><li>1</li><li>2</li><li>3</li></ul>
+<var></var>
+<video width="" height="" controls="" poster=""><source src="" type=""></video>
+<wbr>
+<xmp></xmp>
